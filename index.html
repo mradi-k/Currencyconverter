@@ -19,7 +19,7 @@
 
                     $("#btn1").click(function(){
 
-                        alert("clicked");
+                        //alert("clicked");
                         var amt=$("#amount").val();
                         var fromcur=$("#fromcurrency").val();
                         var tocur=$("#tocurrency").val();
@@ -50,8 +50,8 @@
                 });
 
                 $(document).ajaxComplete(function(){
-                    $("btn1").html("convert");
-                    $("btn1").removeAttr("disabled");
+                    $("#btn1").html("convert");
+                    $("#btn1").removeAttr("disabled");
                 })
         </script>
          <style>
@@ -94,6 +94,7 @@
 
             select currency(convert fromcurrency)
             <select name="" id="fromcurrency">
+                <option value="USD">Usa</option>
                 <option value="USD">Usa</option>
                 <option value="EUR">EUR</option>
             </select>
